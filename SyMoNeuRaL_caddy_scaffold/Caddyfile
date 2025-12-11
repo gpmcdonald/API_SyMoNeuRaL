@@ -1,0 +1,13 @@
+localhost
+
+root * frontend
+file_server
+
+handle /ui/* {
+    reverse_proxy localhost:8000
+}
+
+log {
+    output stdout
+    format json
+}

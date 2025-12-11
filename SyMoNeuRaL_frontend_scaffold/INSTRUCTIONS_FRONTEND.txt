@@ -1,0 +1,19 @@
+SyMoNeuRaL Frontend Upload Instructions
+---------------------------------------
+
+1. Upload this ZIP to your GitHub repo (API_SyMoNeuRaL or a separate frontend repo) using your phone.
+
+2. In GitHub mobile app or web:
+   - Open your repo
+   - Add file → Upload files
+   - Select all files/folders inside this ZIP (frontend/)
+   - Commit with a message like: "Add SyMoNeuRaL frontend scaffold"
+
+3. Optional: If you want the frontend to communicate with your backend:
+   - Replace any placeholder JS with fetch calls to your FastAPI endpoints (e.g., /ui/message)
+   - Later you can serve via Caddy/Nginx with HTTPS locally or test via localhost:8000 with uvicorn proxy
+
+4. After upload, verify:
+   - index.html is in frontend/
+   - style.css is present
+   - js/app.js is present

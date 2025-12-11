@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    container_name: symoneural_backend
+    ports:
+      - "8000:8000"
+    restart: always
+    volumes:
+      - ./api:/app/api
+
+  caddy:
+    image: caddy:latest
+    container_name: symoneural_caddy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

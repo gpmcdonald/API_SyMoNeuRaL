@@ -1,0 +1,19 @@
+SyMoNeuRaL Caddy HTTPS Upload Instructions
+------------------------------------------
+
+1. Upload this ZIP to your GitHub repo (API_SyMoNeuRaL) using your phone.
+
+2. In GitHub mobile app or web:
+   - Open your repo
+   - Add file → Upload files
+   - Select all files/folders inside this ZIP (Caddyfile, instructions)
+   - Commit with a message like: "Add Caddy HTTPS scaffold"
+
+3. On your computer:
+   - Clone the repo
+   - Copy the Caddyfile into the repo root
+   - Install Caddy (https://caddyserver.com/docs/install)
+   - Run Caddy:
+       caddy run --config Caddyfile
+   - Open browser at https://localhost to see frontend served via HTTPS
+   - Any requests to /ui/* are proxied to FastAPI backend (localhost:8000)

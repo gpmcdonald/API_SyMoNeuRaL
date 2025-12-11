@@ -1,0 +1,10 @@
+SyMoNeuRaL Scaffold Package
+--------------------------
+1. Upload this ZIP to your GitHub repo (API_SyMoNeuRaL) using your phone.
+2. On your computer:
+   git clone <your fork>
+   unzip SyMoNeuRaL_scaffold.zip -d .
+   cp -r SyMoNeuRaL_scaffold/* .
+   git add .
+   git commit -m "Add SyMoNeuRaL scaffold"
+   git push
